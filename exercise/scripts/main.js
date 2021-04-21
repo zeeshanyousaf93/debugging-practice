@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', function() {
       if (selectedCards.length < 2) {
         card.classList.add('is-selected');
       }
+	selectedCards.push(this);
 
       // If we have selected two cards, see if they match.
       if (selectedCards.length === 2) {
